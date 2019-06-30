@@ -7,4 +7,3 @@ reset demo
 rebase demo
 rebase demo
 rebase demo
-revert demo
