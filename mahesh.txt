@@ -3,5 +3,7 @@ rebase demo
 rebase demo
 revert demo
 revert demo
+cherry-pick demo
+cherry-pick demo
 stash demo
 change from repo-browser
