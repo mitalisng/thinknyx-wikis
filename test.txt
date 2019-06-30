@@ -1,3 +1,6 @@
 Hi I am test file. -1
 change
 TAG demo
+reset demo
+reset demo
+reset demo
