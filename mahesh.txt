@@ -3,3 +3,5 @@ rebase demo
 rebase demo
 revert demo
 revert demo
+stash demo
+change from repo-browser
