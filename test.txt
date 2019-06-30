@@ -5,3 +5,4 @@ reset demo
 reset demo
 reset demo
 rebase demo
+rebase demo
