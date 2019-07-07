@@ -1,8 +1,6 @@
 ---
-
 - name: Install Docker
   hosts: syn
-
 
   tasks:
     - name: Install yum utils
