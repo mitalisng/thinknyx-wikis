@@ -43,3 +43,12 @@
         name: docker
         state: started
         enabled: yes
+
+    - name: copying jenkins container startup script
+      copy:
+        src: start-jenkins.sh
+        dest: /opt
+        mode: 755
+
+    - name: starting Jenkins Container
+      command: /opt/start-jenkins.sh
