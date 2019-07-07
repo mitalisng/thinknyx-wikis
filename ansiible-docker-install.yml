@@ -1,6 +1,6 @@
 ---
 - name: Install Docker
-  hosts: {{group}}
+  hosts: "{{ group }}"
 
   tasks:
     - name: Install yum utils
