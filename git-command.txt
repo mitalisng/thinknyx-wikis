@@ -1,0 +1,244 @@
+  500  cd /c/Users/kmayer/training/synechron/chennai/
+  501  mkdir repo1
+  502  cd repo1/
+  503  ls -la
+  504  git status
+  505  git init
+  506  ls -la
+  507  git status
+  508  touch .gitignore
+  509  git status
+  510  vi .gitignore
+  511  git status
+  512  touch output.log
+  513  git status
+  514  git add .
+  515  git status
+  516  vi .gitignore
+  517  git status
+  518  git log
+  519  git commit -m "-1"
+  520  git log
+  521  git config --global
+  522  git config --global user.name "kulbhushan.mayer"
+  523  git config --global user.email "kulbhushan.mayer@gmail.com"
+  524  git status
+  525  git commit -am "updateing .gitignore - 2"
+  526  git status
+  527  git log
+  528  git log -p
+  529  git log --oneline 
+  530  git log
+  531  git branch
+  532  git branch new-branch
+  533  git branch
+  534  pwd
+  535  git checkout new-branch 
+  536  pwd
+  537  git branch
+  538  git checkout master
+  539  git branch
+  540  touch test.txt
+  541  git add test.txt
+  542  git status
+  543  git commit -m "commit-3"
+  544  git branch branch-1
+  545  git checkout branch-1
+  546  ls -la
+  547  vi test.txt 
+  548  git status
+  549  git commit -am "merge demo - 1"
+  550  git checkout master
+  551  git checkout -b branch-2
+  552  touch mahesh.txt
+  553  git status
+  554  git add .
+  555  git commit -m "merge demo -2"
+  556  git checkout master
+  557  echo "change" >> test.txt
+  558  git commit -am "merge demo -3"
+  559  git checkout branch1
+  560  git checkout branch-1
+  561  git checkout master 
+  562  git status
+  563  git merge branch-2 
+  564  git log
+  565  git checkout branch-2 
+  566  git merge master 
+  567  git log --oneline 
+  568  git checkout master 
+  569  git log --oneline 
+  570  git checkout branch-1 
+  571  git log --oneline 
+  572  git checkout master 
+  573  git merge master 
+  574  git merge branch-1 
+  575  cat test.txt 
+  576  git commit -am "resolving conflicts - merge demo - 5"
+  577  git log --oneline 
+  578  git checkout branch-1 
+  579  git merge master 
+  580  git log --oneline 
+  581  echo "branching demo" >> test.txt 
+  582  git commit -am "branching demo"
+  583  git branch -d branch-1 
+  584  git checkout master 
+  585  git branch -d branch-2
+  586  git branch 
+  587  git branch -d branch-1
+  588  git branch -D branch-1
+  589  git branch 
+  590  git branch -d new-branch 
+  591  git branch 
+  592  git log --oneline 
+  593  git checkout 75961e5
+  594  git checkout master 
+  595  git branch 
+  596  git log --oneline 
+  597  git tag
+  598  git tag REL-1.0
+  599  git tag
+  600  git checkout REL-1.0 
+  601  echo "TAG demo" >> test.txt 
+  602  git status
+  603  git commit -am "tag demo - 1"
+  604  cat test.txt 
+  605  git checkout REL-1.0 
+  606  cat test.txt 
+  607  git checkout 727eed7
+  608  git branch 
+  609  git checkout -b tag-demoo-hotfix
+  610  git branch 
+  611  git checkout master 
+  612  git merge tag-demoo-hotfix 
+  613  git tag REL-1.1
+  614  git branch tag-demoo-hotfix 
+  615  git branch -d tag-demoo-hotfix 
+  616  git branch
+  617  git checkout REL-1.0
+  618  cat test.txt 
+  619  git checkout REL2.0
+  620  git checkout REL-1.1
+  621  cat test.txt 
+  622  git checkout master 
+  623  git branch
+  624  git log --oneline 
+  625  echo "reset demo" >> test.txt 
+  626  git commit -am "reset demo - 1"
+  627  echo "reset demo" >> test.txt 
+  628  git commit -am "reset demo - 2"
+  629  echo "reset demo" >> test.txt 
+  630  git commit -am "reset demo - 3"
+  631  cat test.txt 
+  632  git log --oneline 
+  633  git reset 727eed7
+  634  git log --oneline 
+  635  cat test.txt 
+  636  git commit -am "reset demo - END"
+  637  cat test.txt 
+  638  git log --oneline 
+  639  git status
+  640  git log --oneline 
+  641  git checkout -b rebase-demo
+  642  git log --oneline 
+  643  echo "rebase demo" >> test.txt 
+  644  git commit -am "rebase demo - 1"
+  645  git checkout master 
+  646  echo "rebase demo" >> mahesh.txt 
+  647  git commit -am "rebase demo - 2"
+  648  git checkout rebase-demo
+  649  git commit -am "rebase demo - 3"
+  650  echo "rebase demo" >> test.txt 
+  651  git commit -am "rebase demo - 3"
+  652  echo "rebase demo" >> test.txt 
+  653  git commit -am "rebase demo - 4"
+  654  git log --oneline 
+  655  git checkout master 
+  656  git log --oneline 
+  657  echo "rebase demo" >> mahesh.txt 
+  658  git commit -am "rebase demo - 5"
+  659  echo "rebase demo" >> mahesh.txt 
+  660  git commit -am "rebase demo - 6"
+  661  git log --oneline 
+  662  git checkout rebase-demo 
+  663  git log --oneline 
+  664  git rebase master 
+  665  git log --oneline 
+  666  history 
+  667  git log --oneline 
+  668  git checkout master 
+  669  git merge rebase-demo 
+  670  git branch -d rebase-demo 
+  671  git log --oneline 
+  672  echo "revert demo" >> mahesh.txt 
+  673  git commit -am "revert demo - 1"
+  674  echo "revert demo" >> test.txt 
+  675  git commit -am "revert demo - 2"
+  676* echo "revert demo" >> mahesh.txt
+  677  git commit -am "revert demo - 3"
+  678  git log --oneline 
+  679  git revert 3f7df07
+  680  git log --oneline 
+  681  cat test.txt 
+  682  cat mahesh.txt 
+  683  history 
+  684  git log --oneline 
+  685  git checkout -b cherrypick
+  686  echo "cherry-pick demo" >> mahesh.txt 
+  687  git commit -am "cherry pick demo - 1"
+  688  echo "cherry-pick demo" >> test.txt 
+  689  git commit -am "cherry pick demo - 2"
+  690  echo "cherry-pick demo" >> mahesh.txt 
+  691  git commit -am "cherry pick demo - 3"
+  692  git log --oneline 
+  693  git checkout master 
+  694  git cherry-pick 8a179a9
+  695  git log --oneline 
+  696  git cherry-pick 8a179a9
+  697  git cherry-pick --abort 
+  698  git status
+  699  echo "stash demo" >> mahesh.txt 
+  700  echo "stash demo" >> test.txt 
+  701  git status
+  702  git stash
+  703  git status
+  704  git checkout -b stashdemo
+  705  echo "stash demo" >> test.txt 
+  706  git commit -am "stash demo - 1"
+  707  git checkout master 
+  708  git status
+  709  git stash pop
+  710  git commit -am "stash demo - 2"
+  711  git remote -v
+  712  git remote add origin https://github.com/kmayer10/synechron-chennai-batch1.git
+  713  git remote -v
+  714  git push origin master 
+  715  cd ..
+  716  cd repo1/
+  717  git push origin REL-1.0\
+  718  git push origin REL-1.0
+  719  git push origin REL-1.1
+  720  git branch 
+  721  git push origin cherrypick 
+  722  git push origin stashdemo 
+  723  cd ../
+  724  git clone https://github.com/kmayer10/synechron-chennai-batch1.git
+  725  lll
+  726  lll
+  727  lll
+  728  ll
+  729  cd synechron-chennai-batch1/
+  730  git tag 
+  731  git log --oneline 
+  732  git branch 
+  733  git branch -r
+  734  git checkout stashdemo 
+  735  git branch 
+  736  echo "remote-branch demo" >> test.txt 
+  737  git commit -am "remote-branch-demo - 1"
+  738  git push origin stashdemo 
+  739  cd ../repo1/
+  740  git fetch origin 
+  741  ls -la
+  742  history >> git-command.txt
+  743  history >> git-command.txt
